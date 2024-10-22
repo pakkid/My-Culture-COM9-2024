@@ -23,8 +23,8 @@ function easeScroll() {
 window.requestAnimationFrame(render);
 
 function render() {
-    dx = li(dx, sx, 0.06);
-    dy = li(dy, sy, 0.06);
+    dx = li(dx, sx, 0.1);
+    dy = li(dy, sy, 0.1);
         
     dx = Math.floor(dx * 100) / 100;
     dy = Math.floor(dy * 100) / 100;
