@@ -80,9 +80,14 @@
         window.history.scrollRestoration = "manual"; // Disable scroll restoration
     </script>
 	
-   <script src="js/smoothoperator.js"></script>
+    <script src="js/smoothoperator.js"></script>
 	<script src="js/scrollSections.js"></script>
 	<script src="js/hideheader.js"></script>
+    <script>
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            window.location.href = "sorry.html";
+        }
+    </script>
 
 </body>
 </html>
